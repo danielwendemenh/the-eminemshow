@@ -16,7 +16,7 @@ const nextbtn = document.getElementById('Nextpic');
 const Prevbtn = document.getElementById('Prevpic');
 let i = 1;
 var size = slides[i].clientWidth;
-const inteval = 5000;
+const inteval = 10000;
 const firstclone = slides[0].cloneNode(true);
 const lastclone = slides[slides.length -1].cloneNode(true);
 let slideId ;
