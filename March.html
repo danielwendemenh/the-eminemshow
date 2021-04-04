@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="/styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="styles/mobile.css"
+    />
+    <script async src="./scripts/main.js"></script>
+    <title>The eminem show</title>
+  </head>
+  <body>
+    <!-- nav start -->
+    <header>
+      <nav class="nav-box">
+        <div class="nav-item logo"><span>The eminem show</span></div>
+        <div class="nav-item nav">
+          <nav class="nav-links" class="">
+            <a class="links" href="./index.html" class="li" id="home-btn"
+              >Home</a
+            >
+            <a class="links" href="#" class="li" id="home-btn">New</a>
+            <a class="links" href="#" class="li" id="home-btn">albums</a>
+            <a class="links" href="#" class="li" id="home-btn">March</a>
+          </nav>
+          <div class="burger" onclick="navslide();">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- log/sgin up-->
+    <form class="form" action="" method="get">
+      <div class="log">
+        <div class="log-row">
+          <img src="./images/avatar.svg" class="avatar" />
+        </div>
+        <div class="log-row">
+          <div class="log-row-holder">
+            <input class="inp" placeholder="User name" type="text" />
+          </div>
+
+          <div class="log-row-holder">
+            <input placeholder="Password" type="password" class="inp" />
+          </div>
+        </div>
+        <div class="box-btn log-row">
+          <button class="btn">Log in</button>
+        </div>
+      </div>
+      <div class="or">
+        <h1>OR</h1>
+      </div>
+      <div class="sgin">
+        <h1 style="color: red">sgin Up</h1>
+        <div class="fname">
+          <input placeholder="Enter Name" type="text" class="inp" />
+          <input placeholder="Last Name" type="text" class="inp" />
+        </div>
+        <div class="fname">
+          <input type="password" placeholder="Pick password" class="inp" />
+          <input type="password" placeholder="Confirm password" class="inp" />
+        </div>
+        <div class="mail">
+          <input type="email" placeholder="@gmail.com" class="inp solo" />
+        </div>
+        <div class="cmail mail">
+          <input
+            type="email"
+            placeholder="Confirm@gmail.com"
+            class="inp solo"
+          />
+        </div>
+        <div class="box-btn">
+          <button class="btn sginup-btn">Sgin UP</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
