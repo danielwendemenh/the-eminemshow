@@ -18,6 +18,9 @@ p {
 $myblack: #111;
 $mywhite: rgb(194, 194, 194);
 $myred: rgb(204, 7, 7);
+#header {
+  z-index: 10;
+}
 body {
   font-size: 2vmax;
   background-color: black;
@@ -61,6 +64,7 @@ a {
   width: inherit;
   height: inherit;
   transition: all 0.2s ease;
+  z-index: 10;
 }
 .burger {
   display: none;
@@ -73,7 +77,9 @@ a {
     height: 5px;
     width: 25px;
     background-color: rgb(226, 226, 226);
+    pointer-events: none;
   }
+  // pointer-events: none;
 }
 .links {
   flex: 1;
@@ -138,16 +144,22 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  line-height: 2rem;
+
   width: 20rem;
   height: 20rem;
   color: white;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: 50%;
   right: 2em;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  span {
+    line-height: 15px;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+  }
 }
 
 //cahngeing image
@@ -279,7 +291,7 @@ footer {
   justify-content: center;
 }
 .inp {
-  padding: 10px;
+  padding: 25px;
   outline: none;
   border: none;
   border-radius: 2rem;
@@ -318,7 +330,7 @@ footer {
   z-index: 3;
 
   h1 {
-    z-index: 300;
+    z-index: 4;
     color: $mywhite;
   }
 }
@@ -379,7 +391,8 @@ footer {
 }
 //form css
 footer {
-  height: 30vh;
+  min-height: 30vh;
+  padding: 10px;
 }
 .contact {
   display: flex;
@@ -397,6 +410,11 @@ footer {
     justify-content: space-around;
     // background-color: green;
     width: 100%;
+    span {
+      font-size: 13px;
+      width: 60%;
+      padding: 10px;
+    }
     .frow {
       width: 80%;
       input {

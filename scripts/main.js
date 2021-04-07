@@ -1,8 +1,22 @@
+const header = document.getElementById('header');
+
 const navslide = ()=>{
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     burger.addEventListener('click',()=>{
         nav.classList.toggle('test');
+        nav.addEventListener('transitionend',()=>{
+            nav.style.position = 'fixed';
+            nav.style.top = '8vh';
+            nav.style.right = '0';
+            nav.style.botom = '0';
+           
+            header.style.position = 'sticky';
+            header.style.top = '0';
+            header.style.right = '0';
+            header.style.width = '100%';
+
+        })
     })
 
 }

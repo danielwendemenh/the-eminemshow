@@ -1,5 +1,6 @@
 body {
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .form {
@@ -25,6 +26,10 @@ body {
 .form .log input {
   width: 40vh;
   margin: 0 10px 0 0;
+}
+
+.form .inp {
+  padding: 15px;
 }
 
 .form .or::after {
@@ -157,7 +162,7 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: 50%;
   right: 0;
@@ -177,12 +182,12 @@ body {
 }
 
 .slider-info p {
-  display: block;
+  display: inline;
   text-align: center;
   width: 100%;
   margin-left: 10px;
-  padding: 20px;
-  line-height: 20px;
+  padding: 5px;
+  line-height: 10px;
 }
 
 .logo {
@@ -239,11 +244,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
+  min-height: 70vh;
 }
 
 footer .madeby {
-  margin-top: 4rem;
   padding-bottom: 20px;
 }
 
@@ -259,14 +263,25 @@ footer .madeby img {
 footer .contact {
   height: 50%;
   width: 100%;
+  padding: 10px;
 }
 
 footer .contact .contact-form {
   width: 100%;
+  height: 100%;
+}
+
+footer .contact .contact-form span {
+  font-size: 70%;
+  padding: 10px;
+  text-align: left;
+  line-height: 15px;
+  color: white;
 }
 
 footer .contact .contact-form .frow {
   width: 100%;
+  margin-top: 2vh;
 }
 
 footer .contact .contact-form .frow input {
